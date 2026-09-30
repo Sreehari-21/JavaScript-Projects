@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.container {
+  width: 420px;
+  max-width: 90%;
+  padding: 2.5rem;
+
+  background: #ffffff;
+  border-radius: 20px;
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+}
+
+.container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+
+  font-size: 1.8rem;
+  color: #222;
+}
+
+form {
+  margin-top: 1rem;
+}
+
+.amount p,
+.from p,
+.to p {
+  margin-bottom: 0.5rem;
+
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #555;
+}
+
+form input {
+  width: 100%;
+  height: 3.2rem;
+
+  padding: 0 1rem;
+
+  border: 1px solid #ddd;
+  border-radius: 10px;
+
+  font-size: 1rem;
+
+  outline: none;
+
+  transition: 0.2s;
+}
+
+form input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.15);
+}
+
+.dropdown {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 1rem;
+
+  margin-top: 2rem;
+}
+
+.from,
+.to {
+  flex: 1;
+}
+
+.select-container {
+  display: flex;
+  align-items: center;
+
+  gap: 0.5rem;
+
+  width: 100%;
+
+  padding: 0.6rem;
+
+  border: 1px solid #ddd;
+  border-radius: 10px;
+
+  background-color: #fff;
+
+  transition: 0.2s;
+}
+
+.select-container:focus-within {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.12);
+}
+
+.select-container img {
+  width: 32px;
+  height: 24px;
+
+  object-fit: cover;
+
+  border-radius: 4px;
+}
+
+.select-container select {
+  flex: 1;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.dropdown i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+
+  margin-bottom: 0.1rem;
+
+  border-radius: 50%;
+
+  background-color: #667eea;
+  color: white;
+
+  font-size: 1rem;
+
+  cursor: pointer;
+
+  transition: 0.25s;
+}
+
+.dropdown i:hover {
+  transform: rotate(180deg);
+  background-color: #5568d9;
+}
+
+.msg {
+  margin: 2rem 0;
+
+  padding: 1rem;
+
+  border-radius: 10px;
+
+  background-color: #f5f6fa;
+
+  color: #333;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  text-align: center;
+}
+
+form button {
+  width: 100%;
+  height: 3.2rem;
+
+  border: none;
+  border-radius: 10px;
+
+  background: linear-gradient(135deg, #667eea, #764ba2);
+
+  color: white;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+form button:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+form button:active {
+  transform: translateY(0);
+}
